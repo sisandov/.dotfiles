@@ -1,0 +1,27 @@
+import = [
+  # "~/.alacritty-themes/themes/alabaster_dark.toml"
+  # "~/.alacritty-themes/themes/blood_moon.toml"
+  # "~/.alacritty-themes/themes/campbell.toml"
+  # "~/.alacritty-themes/themes/hyper.toml"
+  # "~/.alacritty-themes/themes/alabaster_dark.toml"
+  # "~/.alacritty-themes/themes/github_dark_high_contrast.toml"
+  # "~/.alacritty-themes/themes/gruvbox_light.toml"
+  # "~/.alacritty-themes/themes/noctis-lux.toml"
+  # "~/.alacritty-themes/themes/everforest_light.toml"
+  # "~/.alacritty-themes/themes/papertheme.toml"
+  # "~/.alacritty-themes/themes/github_light_tritanopia.toml"  
+  # "~/.alacritty-themes/themes/kanagawa_dragon.toml"  
+  "~/.alacritty-themes/themes/rose-pine-dawn.toml"
+  # "~/.alacritty-themes/themes/ayu_light.toml"
+  # "~/.alacritty-themes/themes/rose-pine-dawn.toml"
+  ]
+
+[env]
+WINIT_X11_SCALE_FACTOR = "1"
+
+[font]
+size = 16.0
+[font.normal]
+family = "IosevkaTerm Nerd Font"
+style = "Regular"
+
