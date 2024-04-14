@@ -1,5 +1,8 @@
 require("luafiles")
 
+-- disable swap
+vim.opt.swapfile = false
+
 if vim.g.neovide then
 	vim.g.neovide_cursor_animation_length = 0
 	vim.o.guifont = "IosevkaTerm Nerd Font:h16"
@@ -28,4 +31,4 @@ vim.api.nvim_create_user_command('Q', 'q', {})
 
 vim.opt.guicursor = ''
 -- Theme
-vim.cmd("colorscheme catppuccin-latte")
+vim.cmd("colorscheme tokyonight-day")

@@ -11,8 +11,9 @@ import = [
   # "~/.alacritty-themes/themes/papertheme.toml"
   # "~/.alacritty-themes/themes/github_light_tritanopia.toml"  
   # "~/.alacritty-themes/themes/kanagawa_dragon.toml"  
-  "~/.alacritty-themes/themes/rose-pine-dawn.toml"
-  # "~/.alacritty-themes/themes/ayu_light.toml"
+  # "~/.alacritty-themes/themes/rose-pine.toml"
+  # "~/.alacritty-themes/themes/argonaut.toml"
+  "~/.alacritty-themes/themes/tokyonight_storm.toml"
   # "~/.alacritty-themes/themes/rose-pine-dawn.toml"
   ]
 

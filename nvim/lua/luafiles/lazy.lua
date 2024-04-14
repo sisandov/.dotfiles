@@ -24,6 +24,7 @@ require("lazy").setup({
 	{ "rose-pine/neovim",        name = "rose-pine" },
 	{ "catppuccin/nvim" },
 	{ "sainnhe/gruvbox-material" },
+	{ "folke/tokyonight.nvim" },
 	{ "theprimeagen/harpoon" },
 	{ 'm4xshen/autoclose.nvim' },
 	{
