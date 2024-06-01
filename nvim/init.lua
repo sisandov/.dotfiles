@@ -5,7 +5,6 @@ vim.opt.swapfile = false
 
 if vim.g.neovide then
 	vim.g.neovide_cursor_animation_length = 0
-	vim.o.guifont = "IosevkaTerm Nerd Font:h16"
 end
 
 -- Allow interacting with system clipboard
@@ -13,8 +12,8 @@ vim.keymap.set({ 'n', 'v' }, '<leader>y', '"+y')
 vim.keymap.set({ 'n', 'v' }, '<leader>Y', '"+Y')
 vim.keymap.set({ 'n', 'v' }, '<leader>d', '"+d')
 vim.keymap.set({ 'n', 'v' }, '<leader>D', '"+D')
-vim.keymap.set('n', '<leader>p', '"*p')
-vim.keymap.set('n', '<leader>P', '"*P')
+vim.keymap.set('n', '<leader>[', '"*p')
+vim.keymap.set('n', '<leader>{', '"*P')
 
 -- Emacs window bindings
 vim.api.nvim_set_keymap('n', '<C-x>3', ':vsplit<CR>', { noremap = true })
@@ -31,4 +30,17 @@ vim.api.nvim_create_user_command('Q', 'q', {})
 
 vim.opt.guicursor = ''
 -- Theme
-vim.cmd("colorscheme tokyonight-day")
+vim.cmd("colorscheme tokyonight-night")
+vim.o.termguicolors = true
+
+-- Tabs
+vim.opt.tabstop = 4
+vim.opt.shiftwidth = 4
+
+-- Line wrap
+vim.wo.wrap = false
+
+-- Keep context when scrolling
+vim.opt.scrolloff = 8
+
+vim.opt.cursorlineopt = "number"

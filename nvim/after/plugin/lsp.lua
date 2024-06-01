@@ -1,7 +1,7 @@
 local lsp_zero = require('lsp-zero')
 
 lsp_zero.on_attach(function(client, bufnr)
-	local opts = {buffer = bufnr, remap = false}
+	local opts = { buffer = bufnr, remap = false }
 
 	vim.keymap.set("n", "gd", function() vim.lsp.buf.definition() end, opts)
 	vim.keymap.set("n", "K", function() vim.lsp.buf.hover() end, opts)
@@ -21,11 +21,11 @@ end)
 local lspconfig = require('lspconfig')
 require('mason').setup({})
 require('mason-lspconfig').setup({
-	ensure_installed = {'rust_analyzer', 'clangd', 'gopls', 'tsserver', 'pyright', 'solargraph', 'lua_ls'}
+	ensure_installed = { 'rust_analyzer', 'clangd', 'gopls', 'tsserver', 'pyright', 'rubocop', 'lua_ls', 'html' }
 })
 
 require('mason-lspconfig').setup_handlers({
-  function(server)
-    lspconfig[server].setup({})
-  end,
+	function(server)
+		lspconfig[server].setup({})
+	end,
 })

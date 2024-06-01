@@ -21,12 +21,16 @@ require("lazy").setup({
 		-- or                              , branch = '0.1.x',
 		dependencies = { 'nvim-lua/plenary.nvim' }
 	},
-	{ "rose-pine/neovim",        name = "rose-pine" },
+	{ "rose-pine/neovim",                       name = "rose-pine" },
 	{ "catppuccin/nvim" },
+	{ "nvim-treesitter/nvim-treesitter-context" },
 	{ "sainnhe/gruvbox-material" },
+	{ "f-person/git-blame.nvim" },
 	{ "folke/tokyonight.nvim" },
+	{ "windwp/nvim-ts-autotag" },
 	{ "theprimeagen/harpoon" },
 	{ 'm4xshen/autoclose.nvim' },
+	{ 'akinsho/toggleterm.nvim',                version = "*",     config = true },
 	{
 		"iamcco/markdown-preview.nvim",
 		cmd = { "MarkdownPreviewToggle", "MarkdownPreview", "MarkdownPreviewStop" },
