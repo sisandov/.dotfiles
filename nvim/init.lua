@@ -30,8 +30,9 @@ vim.api.nvim_create_user_command('Q', 'q', {})
 
 vim.opt.guicursor = ''
 -- Theme
-vim.cmd("colorscheme tokyonight-night")
 vim.o.termguicolors = true
+vim.cmd("let ayucolor=\"dark\"")
+vim.cmd("colorscheme ayu")
 
 -- Tabs
 vim.opt.tabstop = 4
