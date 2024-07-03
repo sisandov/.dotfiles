@@ -22,7 +22,8 @@ WINIT_X11_SCALE_FACTOR = "1"
 term = "xterm-256color"
 
 [font]
-size = 15.6
+# size = 15.6
+size = 23.4
 
 [font.normal]
 family = "IosevkaTerm Nerd Font"
