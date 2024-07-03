@@ -21,12 +21,19 @@ import = [
 WINIT_X11_SCALE_FACTOR = "1"
 term = "xterm-256color"
 
-[font]
-# size = 15.6
-size = 23.4
 
 [font.normal]
 family = "IosevkaTerm Nerd Font"
 # family = "Ubuntu Mono Nerd Font"
 style = "Regular"
+
+[font]
+size = 15.6
+
+[keyboard]
+bindings = [
+#  { key = "Space", mods = "Alt", action = "sh $HOME/scripts/fontsize" }
+  {key = "=", mods = "Control", command = { program = "bash", args = ["/home/sakuya/scripts/fontsize.sh"] }},
+  {key = "-", mods = "Control", command = { program = "bash", args = ["/home/sakuya/scripts/fontsize.sh"] }},
+]
 
