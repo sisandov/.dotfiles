@@ -21,7 +21,7 @@ end)
 local lspconfig = require('lspconfig')
 require('mason').setup({})
 require('mason-lspconfig').setup({
-	ensure_installed = { 'bashls', 'rust_analyzer', 'clangd', 'gopls', 'tsserver', 'pyright', 'rubocop', 'lua_ls', 'html' }
+	ensure_installed = { 'volar', 'bashls', 'rust_analyzer', 'clangd', 'gopls', 'tsserver', 'pyright', 'rubocop', 'lua_ls', 'html' }
 })
 
 require('mason-lspconfig').setup_handlers({

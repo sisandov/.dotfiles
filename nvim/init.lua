@@ -45,3 +45,5 @@ vim.wo.wrap = false
 vim.opt.scrolloff = 8
 
 vim.opt.cursorlineopt = "number"
+vim.opt.number = true
+-- vim.opt.signcolumn = "number"
