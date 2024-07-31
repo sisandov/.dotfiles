@@ -27,7 +27,6 @@ require("lazy").setup({
 	{ 'stevearc/oil.nvim' },
 	{ "nvim-treesitter/nvim-treesitter-context" },
 	{ 'echasnovski/mini.nvim',                  version = false },
-	{ 'mvllow/modes.nvim' },
 	{ "nvim-tree/nvim-web-devicons" },
 	{ "jaredgorski/fogbell.vim" },
 	{ "Lokaltog/vim-monotone" },
