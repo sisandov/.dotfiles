@@ -14,6 +14,8 @@ vim.opt.rtp:prepend(lazypath)
 
 
 require("lazy").setup({
+	{ 'echasnovski/mini.notify', version = false },
+	{ 'numToStr/Comment.nvim' },
 	{ 'tpope/vim-rsi' },
 	{
 		'nvim-telescope/telescope.nvim',
@@ -21,7 +23,7 @@ require("lazy").setup({
 		-- or                              , branch = '0.1.x',
 		dependencies = { 'nvim-lua/plenary.nvim' }
 	},
-	{ "rose-pine/neovim", name = "rose-pine" },
+	{ "rose-pine/neovim",                       name = "rose-pine" },
 	{ "ayu-theme/ayu-vim" },
 	{ "catppuccin/nvim" },
 	{ 'stevearc/oil.nvim' },
@@ -38,7 +40,7 @@ require("lazy").setup({
 	{ "windwp/nvim-ts-autotag" },
 	{ "theprimeagen/harpoon" },
 	{ 'm4xshen/autoclose.nvim' },
-	{ 'akinsho/toggleterm.nvim',                version = "*",  config = true },
+	{ 'akinsho/toggleterm.nvim',                version = "*",     config = true },
 	{
 		"iamcco/markdown-preview.nvim",
 		cmd = { "MarkdownPreviewToggle", "MarkdownPreview", "MarkdownPreviewStop" },
@@ -64,8 +66,11 @@ require("lazy").setup({
 	{ 'hrsh7th/cmp-buffer' },
 	{ 'hrsh7th/cmp-path' },
 	{ 'saadparwaiz1/cmp_luasnip' },
-	{ 'L3MON4D3/LuaSnip' },
+	{
+		"L3MON4D3/LuaSnip",
+		dependencies = { "rafamadriz/friendly-snippets" },
+	},
 	{ 'rafamadriz/friendly-snippets' },
 	{ 'hrsh7th/cmp-nvim-lua' },
-	{ "nvim-treesitter/nvim-treesitter",  build = ":TSUpdate" }
+	{ "nvim-treesitter/nvim-treesitter", build = ":TSUpdate" }
 })

@@ -13,7 +13,8 @@ import = [
   # "~/.alacritty-themes/themes/kanagawa_dragon.toml"  
   # "~/.alacritty-themes/themes/rose-pine.toml"
   # "~/.alacritty-themes/themes/argonaut.toml"
-  "~/.alacritty-themes/themes/tokyonight_night.toml"
+  # "~/.alacritty-themes/themes/tokyonight_night.toml"
+  "~/.alacritty-themes/themes/fogbell.toml"
   # "~/.alacritty-themes/themes/rose-pine-dawn.toml"
   ]
 
@@ -24,8 +25,9 @@ term = "xterm-256color"
 
 [font.normal]
 family = "IosevkaTerm Nerd Font"
-# family = "Ubuntu Mono Nerd Font"
+# family = "IosevkaTerm Nerd Font Mono"
 style = "Regular"
+# style = "Light"
 
 [font]
 size = 23.4

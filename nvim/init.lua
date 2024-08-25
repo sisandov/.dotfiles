@@ -38,9 +38,10 @@ vim.api.nvim_create_user_command('Q', 'q', {})
 vim.opt.guicursor = ''
 -- Theme
 -- vim.o.termguicolors = true
--- vim.cmd("let ayucolor=\"dark\"")
+-- vim.cmd("let ayucolor=\"light\"")
 -- vim.cmd("colorscheme ayu")
-vim.cmd("colorscheme rose-pine-dawn")
+vim.cmd("colorscheme rose-pine")
+-- vim.cmd("colorscheme fogbell")
 
 -- Tabs
 vim.opt.tabstop = 4
@@ -55,3 +56,6 @@ vim.opt.scrolloff = 8
 vim.opt.cursorlineopt = "number"
 vim.opt.number = true
 -- vim.opt.signcolumn = "number"
+--
+vim.opt.laststatus = 0
+vim.cmd("set guicursor+=a:blinkon0")
