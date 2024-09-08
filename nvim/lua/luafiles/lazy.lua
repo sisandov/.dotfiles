@@ -14,6 +14,7 @@ vim.opt.rtp:prepend(lazypath)
 
 
 require("lazy").setup({
+	{ 'mistweaverco/kulala.nvim', opts = {} },
 	{ 'echasnovski/mini.notify', version = false },
 	{ 'numToStr/Comment.nvim' },
 	{ 'tpope/vim-rsi' },
@@ -39,7 +40,7 @@ require("lazy").setup({
 	{ "folke/tokyonight.nvim" },
 	{ "windwp/nvim-ts-autotag" },
 	{ "theprimeagen/harpoon" },
-	{ 'm4xshen/autoclose.nvim' },
+	-- { 'm4xshen/autoclose.nvim' },
 	{ 'akinsho/toggleterm.nvim',                version = "*",     config = true },
 	{
 		"iamcco/markdown-preview.nvim",

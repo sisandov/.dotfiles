@@ -26,7 +26,7 @@ term = "xterm-256color"
 [font.normal]
 family = "IosevkaTerm Nerd Font"
 # family = "IosevkaTerm Nerd Font Mono"
-style = "Regular"
+# style = "Meslo Nerd Font"
 # style = "Light"
 
 [font]
