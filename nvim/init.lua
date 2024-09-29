@@ -38,9 +38,9 @@ vim.api.nvim_create_user_command('Q', 'q', {})
 vim.opt.guicursor = ''
 -- Theme
 -- vim.o.termguicolors = true
--- vim.cmd("let ayucolor=\"light\"")
--- vim.cmd("colorscheme ayu")
-vim.cmd("colorscheme rose-pine")
+vim.cmd("let ayucolor=\"dark\"")
+vim.cmd("colorscheme ayu")
+-- vim.cmd("colorscheme rose-pine-dawn")
 -- vim.cmd("colorscheme fogbell")
 
 -- Tabs
