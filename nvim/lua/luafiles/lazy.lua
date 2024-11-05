@@ -14,6 +14,11 @@ vim.opt.rtp:prepend(lazypath)
 
 
 require("lazy").setup({
+	{ "pocco81/true-zen.nvim" },
+	{ "EdenEast/nightfox.nvim" },
+	{ "nvim-orgmode/orgmode" },
+	{ "ellisonleao/gruvbox.nvim" },
+	{ "rktjmp/lush.nvim" },
 	{ 'mistweaverco/kulala.nvim', opts = {} },
 	{ 'echasnovski/mini.notify', version = false },
 	{ 'numToStr/Comment.nvim' },

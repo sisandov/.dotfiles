@@ -3,4 +3,10 @@ require("oil").setup({
 		-- Show files and directories that start with "."
 		show_hidden = true,
 	},
+	columns = {
+		"icon",
+		"permissions",
+		"size",
+		"mtime",
+	},
 })
