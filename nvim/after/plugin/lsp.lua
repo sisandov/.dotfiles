@@ -21,11 +21,32 @@ end)
 local lspconfig = require('lspconfig')
 require('mason').setup({})
 require('mason-lspconfig').setup({
-	ensure_installed = { 'volar', 'bashls', 'rust_analyzer', 'clangd', 'gopls', 'tsserver', 'pyright', 'rubocop', 'lua_ls', 'html' }
+	ensure_installed = { 'eslint', 'bashls', 'rust_analyzer', 'clangd', 'gopls', 'ts_ls', 'pyright', 'rubocop', 'lua_ls', 'html' }
 })
 
 require('mason-lspconfig').setup_handlers({
 	function(server)
-		lspconfig[server].setup({})
+		local opts = {}
+		if server == "ts_ls" then
+			opts.init_options = {
+				plugins = {
+					{
+						name = "@vue/typescript-plugin",
+						location = "/home/sakuya/.asdf/installs/nodejs/23.1.0/lib/node_modules/@vue/typescript-plugin",
+						languages = { "javascript", "typescript", "vue" },
+					},
+				},
+			}
+			opts.filetypes = { "typescript", "javascript", "javascriptreact", "typescriptreact", "vue" }
+		end
+
+		if server == "volar" then
+			opts.init_options = {
+				vue = {
+					hybridMode = true,
+				},
+			}
+		end
+		lspconfig[server].setup(opts)
 	end,
 })

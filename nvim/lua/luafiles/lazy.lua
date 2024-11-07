@@ -14,7 +14,8 @@ vim.opt.rtp:prepend(lazypath)
 
 
 require("lazy").setup({
-	{ "pocco81/true-zen.nvim" },
+	{ "cdmill/neomodern.nvim" }, 
+	{ "cdmill/focus.nvim" },
 	{ "EdenEast/nightfox.nvim" },
 	{ "nvim-orgmode/orgmode" },
 	{ "ellisonleao/gruvbox.nvim" },

@@ -9,3 +9,5 @@ vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 -- Match next under cursor
 vim.keymap.set("n", "<leader>N", "#", { noremap = true, silent = true })
 vim.keymap.set("n", "<leader>n", "*", { noremap = true, silent = true })
+
+vim.keymap.set("n", "<leader>z", ":Focus<CR>", { noremap = true, silent = true })

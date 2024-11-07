@@ -43,7 +43,7 @@ vim.opt.guicursor = ''
 -- vim.cmd("colorscheme rose-pine-dawn")
 -- vim.cmd("colorscheme fogbell")
 -- vim.o.background = "light"
-vim.cmd([[colorscheme carbonfox]])
+vim.cmd([[colorscheme daylight]])
 
 -- Tabs
 vim.opt.tabstop = 4
