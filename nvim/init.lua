@@ -40,10 +40,11 @@ vim.opt.guicursor = ''
 -- vim.o.termguicolors = true
 -- vim.cmd("let ayucolor=\"dark\"")
 -- vim.cmd("colorscheme ayu")
--- vim.cmd("colorscheme rose-pine-dawn")
+vim.cmd("colorscheme rose-pine-dawn")
 -- vim.cmd("colorscheme fogbell")
 -- vim.o.background = "light"
-vim.cmd([[colorscheme daylight]])
+-- vim.cmd([[colorscheme roseprime]])
+-- vim.cmd([[colorscheme daylight]])
 
 -- Tabs
 vim.opt.tabstop = 4

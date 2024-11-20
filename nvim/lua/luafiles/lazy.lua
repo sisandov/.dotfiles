@@ -14,6 +14,7 @@ vim.opt.rtp:prepend(lazypath)
 
 
 require("lazy").setup({
+	{ "mfussenegger/nvim-lint" },
 	{ "cdmill/neomodern.nvim" }, 
 	{ "cdmill/focus.nvim" },
 	{ "EdenEast/nightfox.nvim" },

@@ -47,6 +47,46 @@ require('mason-lspconfig').setup_handlers({
 				},
 			}
 		end
+
+		if server == "solargraph" then
+			opts.cmd = { "bundle", "exec", "solargraph", "stdio" }
+			opts.init_options = {
+				diagnostics = true,
+			}
+		end
+
+		if server == "rubocop" then
+			opts.cmd = { "bundle", "exec", "rubocop", "--lsp" }
+			opts.root_dir = require("lspconfig.util").root_pattern("Gemfile", ".git")
+		end
+
+		if server == "lua_ls" then
+			opts.settings = {
+				Lua = {
+					runtime = {
+						-- Tell the language server which version of Lua you're using
+						-- (most likely LuaJIT in the case of Neovim)
+						version = 'LuaJIT',
+					},
+					diagnostics = {
+						-- Get the language server to recognize the `vim` global
+						globals = {
+							'vim',
+							'require'
+						},
+					},
+					workspace = {
+						-- Make the server aware of Neovim runtime files
+						library = vim.api.nvim_get_runtime_file("", true)
+					},
+					-- Do not send telemetry data containing a randomized but unique identifier
+					telemetry = {
+						enable = false
+					},
+				},
+			}
+		end
+
 		lspconfig[server].setup(opts)
 	end,
 })
